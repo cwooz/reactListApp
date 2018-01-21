@@ -1,7 +1,10 @@
 {
   "name": "react-complete-guide",
   "version": "0.1.0",
-  "private": true,
+  "description": "Simple React App for class assignment",
+  "repository": "git@github.com:cwooz/reactListApp.git",
+  "author": "wooz",
+  "license": "ISC",
   "dependencies": {
     "radium": "^0.21.1",
     "react": "^16.2.0",
