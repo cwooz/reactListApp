@@ -6,10 +6,10 @@
   "author": "wooz",
   "license": "ISC",
   "dependencies": {
-    "radium": "^0.21.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "radium": "^0.19.4",
+    "react": "^16.0.0-rc.3",
+    "react-dom": "^16.0.0-rc.3",
+    "react-scripts": "1.0.13"
   },
   "scripts": {
     "start": "react-scripts start",
