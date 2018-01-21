@@ -1,5 +1,10 @@
+body {
+  background-color: #3A93F2;
+}
+
 .App {
   text-align: center;
+  background-color: #3A93F2;
 }
 
 .red {
