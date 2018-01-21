@@ -13,21 +13,8 @@ class App extends Component {
 		showPersons: false
 	}
 
-	// switchNameHandler = (newName) => {
-	// 	// console.log('was clicked');
-	// 	// this.state.persons[0].name = 'Maximilian';
-	// 	this.setState({
-	// 		persons: [
-	// 			{ name: newName, age: '28' },
-	// 			{ name: 'Manu', age: '19'},
-	// 			{ name: 'Sam', age: '22' }
-	// 		]
-	//   })
-	// }
-
 	deletePersonHandler = (personIndex) => {
 		const persons = [...this.state.persons.slice()];
-		// const persons = this.state.persons.slice();
 		persons.splice(personIndex, 1);
 		this.setState({persons: persons})
 	}
@@ -41,20 +28,12 @@ class App extends Component {
 			...this.state.persons(personIndex)
 		};
 
-		// const person = Object.assign({}, this.state.persons(personIndex));
-
 		person.name = event.target.value;
 
 		const persons = [...this.state.persons];
 		persons[personIndex] = person;
 
 		this.setState( {persons: persons} )
-		// 	persons: [
-		// 		{ name: 'Max', age: '28' },
-		// 		{ name: event.target.value, age: '19'},
-		// 		{ name: 'Stephanie', age: '22' }
-		// 	]
-	  // })
 	}
 
 	togglePersonsHandler = () => {
@@ -85,18 +64,6 @@ class App extends Component {
 							key={person.id}
 							changed={(event) => this.nameChangedHandler(event, persons.id)} />
 					})}
-					{/* <Person 
-						name={this.state.persons[0].name}  
-						age={this.state.persons[0].age} />
-					<Person 
-						name={this.state.persons[1].name} 
-						age={this.state.persons[1].age}
-						click={this.switchNameHandler.bind(this, 'Max!!')} 
-						changed={this.nameChangedHandler} >Hobbies: Racing Cars</Person>
-					<Person 
-						name={this.state.persons[2].name} 
-						age={this.state.persons[2].age}
-						click={this.switchNameHandler.bind(this, 'Max!!!')} /> */}
 				</div>
 			);
 		}
